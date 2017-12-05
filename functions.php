@@ -100,6 +100,7 @@ function xb_load_scripts()
 {
 	// remove woo styles
 	wp_enqueue_script('xbscript_jquery', get_stylesheet_directory_uri() . '/lib/build/jquery-3.2.1.min.js');
+	wp_enqueue_script('xbscript_three', get_stylesheet_directory_uri() . '/lib/build/three.min.js');
 	wp_enqueue_script('xbscript_app', get_stylesheet_directory_uri() . '/lib/build/app.min.js');
 	wp_register_style('xbstyle', get_stylesheet_directory_uri() . '/lib/build/style.css' );
 	wp_enqueue_style('xbstyle');

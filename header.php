@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+
+	website by xavier-burrow.com
+
+-->
 <html lang="en">
 <head>
 	<title><?php bloginfo('name'); ?></title>
@@ -21,6 +26,11 @@
 		/* ]]> */
 	</script>
 </head>
+
+<div id='canvas-wrapper'>
+	<!-- three js loads here -->
+</div>
+
 <body class="<?php echo join(' ', get_body_class(''));?>">
 <div class="content">
 	<div class="wrapper">
