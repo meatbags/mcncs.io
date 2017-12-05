@@ -1,9 +1,5 @@
 <?php
 get_header();
-?>
-
-Hello world.
-
-<?php
+get_template_part('maintenance');
 get_footer();
 ?>

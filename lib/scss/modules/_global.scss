@@ -9,10 +9,11 @@ body, html {
 
 body {
   @extend .noselect;
-  
+
   font-family: $fontStack;
   font-size: $fontSize;
   line-height: 1.4;
   color: $colourPrimary;
   background-color: $colourBackground;
+  letter-spacing: $letterSpacing;
 }
