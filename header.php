@@ -28,7 +28,7 @@
 </head>
 
 <div id='canvas-wrapper'>
-	<!-- three js loads here -->
+	<!-- graphics load here -->
 </div>
 
 <body class="<?php echo join(' ', get_body_class(''));?>">

@@ -1,5 +1,13 @@
 <?php
-get_header();
-//get_template_part('maintenance');
-get_footer();
+  get_header();
+?>
+
+<div class='main'>
+  <div class='main__inner'>
+    mechanics
+  </div>
+</div>
+
+<?php
+  get_footer();
 ?>

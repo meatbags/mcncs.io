@@ -17,3 +17,13 @@ body {
   background-color: $colourBackground;
   letter-spacing: $letterSpacing;
 }
+
+.content {
+  z-index: $indexContent;
+  position: absolute;
+  width: 100%;
+
+  .wrapper {
+    width: 100%;
+  }
+}

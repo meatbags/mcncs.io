@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main__inner {
+    padding-top: $space20;
+    letter-spacing: $letterSpacingTitle;
+    text-indent: $letterSpacingTitle;
+    text-transform: uppercase;
+  }
+}
