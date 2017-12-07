@@ -28,6 +28,7 @@
 </head>
 
 <?php
+	get_template_part('nav');
 	get_template_part('canvas');
 	get_template_part('loading');
 ?>
