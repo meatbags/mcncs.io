@@ -8,6 +8,11 @@
   .main__inner {
     padding-top: $space * 18;
 
+    .main__inner__time {
+      padding: $space * 2.2;
+      text-align: right;
+    }
+
     .main__inner__title {
       //letter-spacing: $letterSpacingTitle;
       //text-indent: $letterSpacingTitle;
