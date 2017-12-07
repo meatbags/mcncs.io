@@ -1,3 +1,21 @@
 .noselect {
   user-select: none;
 }
+
+.clickable {
+  cursor: pointer;
+}
+
+.mobile-hide {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.mobile-show {
+  display: none;
+
+  @media screen and (max-width: $mobile) {
+    display: initial;
+  }
+}

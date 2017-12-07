@@ -14,8 +14,6 @@
     }
 
     .main__inner__title {
-      //letter-spacing: $letterSpacingTitle;
-      //text-indent: $letterSpacingTitle;
       text-transform: uppercase;
       opacity: 0;
       transition: $transition;
@@ -26,24 +24,6 @@
 
       &.hidden {
         opacity: 0;
-      }
-
-      .letter {
-        margin-left: $space * 2.2;
-        margin-right: $space * 2.2;
-        display: inline-block;
-        opacity: 0;
-
-        &.active {
-          opacity: 1;
-        }
-
-        &.red {
-          color: $red;
-          //font-weight: bold;
-          //text-decoration: underline;
-          background: $red;
-        }
       }
     }
   }
