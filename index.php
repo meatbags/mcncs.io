@@ -4,7 +4,7 @@
 
 <div class='main'>
   <div class='main__inner'>
-    mechanics
+    <div class='main__inner__title'>mechanics</div>
   </div>
 </div>
 

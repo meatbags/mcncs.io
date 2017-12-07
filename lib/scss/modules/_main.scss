@@ -6,9 +6,35 @@
   align-items: center;
 
   .main__inner {
-    padding-top: $space20;
-    letter-spacing: $letterSpacingTitle;
-    text-indent: $letterSpacingTitle;
-    text-transform: uppercase;
+    padding-top: $space * 18;
+
+    .main__inner__title {
+      //letter-spacing: $letterSpacingTitle;
+      //text-indent: $letterSpacingTitle;
+      text-transform: uppercase;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
+
+      .letter {
+        margin-left: $space * 2.2;
+        margin-right: $space * 2.2;
+        display: inline-block;
+        opacity: 0;
+
+        &.active {
+          opacity: 1;
+        }
+
+        &.red {
+          color: $red;
+          //font-weight: bold;
+          //text-decoration: underline;
+          background: $red;
+        }
+      }
+    }
   }
 }
