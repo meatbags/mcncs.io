@@ -27,9 +27,10 @@
 	</script>
 </head>
 
-<div id='canvas-wrapper'>
-	<!-- graphics load here -->
-</div>
+<?php
+	get_template_part('canvas');
+	get_template_part('loading');
+?>
 
 <body class="<?php echo join(' ', get_body_class(''));?>">
 <div class="content">

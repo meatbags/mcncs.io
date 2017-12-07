@@ -1,0 +1,17 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: $colourBackground;
+  z-index: $indexLoading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loading__inner {
+    img {
+    }
+  }
+}
