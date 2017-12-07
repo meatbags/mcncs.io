@@ -1,5 +1,5 @@
 
-<div class='nav'>
+<div class='nav hidden'>
   <div class='nav__inner'>
     <div class='menu-button'>
       <div class='menu-button__inner'>

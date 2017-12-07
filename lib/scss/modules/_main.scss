@@ -18,9 +18,14 @@
       //text-indent: $letterSpacingTitle;
       text-transform: uppercase;
       opacity: 0;
+      transition: $transition;
 
       &.active {
         opacity: 1;
+      }
+
+      &.hidden {
+        opacity: 0;
       }
 
       .letter {
