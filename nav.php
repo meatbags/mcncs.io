@@ -12,14 +12,19 @@
     <div class='menu-close'>&times;</div>
     <div class='menu__content'>
       <div class='menu__content__inner text-medium'>
-        <div class='menu__content__canvas'>
+        <div class='menu__content__canvas hidden'>
           <!-- 2d canvas loads here -->
         </div>
-        <br />
-        <span class='underline'>MECHANICS FESTIVAL</span><br />
-        BOSTON, FALL 2018<br /><br />
-        <span class='underline'>LINE-UP DROPPING</span><span class='red underline-red'>&nbsp;FEBRUARY</span><br />
-        <br /><br />
+        <div class='menu__content__text hidden'>
+          <br />
+          M E C H A N I C S<span class='mobile-hide'>&nbsp;<span class='red'>&times;</span>&nbsp;F E S T I V A L</span><br /><br />
+          <div class='text-centre'>
+            BOSTON&nbsp;<span class='red'>FALL 2018</span><br />
+            LINE-UP DROPS&nbsp;<span class='red'>FEBRUARY</span><br />
+            TICKETS&nbsp;<span class='red'>APRIL</span><br />
+          </div>
+          <br />
+        </div>
       </div>
     </div>
   </div>

@@ -69,12 +69,37 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: right;
+      text-align: center;
       line-height: 1.5;
       letter-spacing: 4px;
 
-      @media screen and (max-width: $mobile) {
-        text-align: center;
+      .grid {
+        text-align: left;
+
+        div {
+          padding-left: $space;
+          padding-right: $space;
+        }
+      }
+
+      .menu__content__canvas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .menu__content__text {
+        width: 100%;
+        padding-left: $space;
+        padding-right: $space;
+      }
+
+      .menu__content__canvas, .menu__content__text {
+        transition: $transitionFast;
+
+        &.hidden {
+          opacity: 0;
+        }
       }
 
       @media screen and (max-width: 960px) {
