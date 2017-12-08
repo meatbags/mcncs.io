@@ -19,3 +19,37 @@
     display: initial;
   }
 }
+
+.rotate {
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline-red {
+  text-decoration: underline;
+  text-decoration-color: $red;
+}
+
+.text-medium {
+  font-size: $fontSizeMedium;
+}
+
+.text-large {
+  font-size: $fontSizeLarge;
+}
+
+.text-huge {
+  font-size: $fontSizeHuge;
+}
+
+.red {
+  color: $red;
+}
+
+.italics {
+  font-style: italic;
+}

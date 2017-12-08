@@ -26,14 +26,11 @@
 		/* ]]> */
 	</script>
 </head>
-
+<body class="<?php echo join(' ', get_body_class(''));?>">
 <?php
-	get_template_part('nav');
 	get_template_part('canvas');
 	get_template_part('loading');
+	get_template_part('nav');
 ?>
-
-<body class="<?php echo join(' ', get_body_class(''));?>">
 <div class="content">
 	<div class="wrapper">
-		<?php get_template_part('nav'); ?>

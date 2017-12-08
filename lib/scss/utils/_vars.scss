@@ -15,6 +15,7 @@ $fontSizeSmall: 12px;
 $fontSize: 14px;
 $fontSizeMedium: 16px;
 $fontSizeLarge: 22px;
+$fontSizeHuge: 60px;
 $letterSpacing: 1px;
 $letterSpacingTitle: 36px;
 
@@ -29,3 +30,6 @@ $transition: 1.0s;
 
 // breakpoints
 $mobile: 700px;
+
+// borders
+$border: 1px solid $colourPrimary;
