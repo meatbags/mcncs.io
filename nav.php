@@ -9,7 +9,7 @@
 
 <div class='menu'>
   <div class='menu__inner'>
-    <div class='menu-close'>Back</div>
+    <div class='menu-close'>BACK</div>
     <div class='menu__content'>
       <div class='menu__content__inner text-medium'>
         <div class='menu__content__canvas hidden'>
@@ -23,7 +23,12 @@
             Line-up&nbsp;<span class='red'>FEBRUARY</span>
             Tickets&nbsp;<span class='red'>APRIL</span>
           </div>
-          <br /><br /><br />
+          Mechanics is a 2-day contemporary electronic,
+          digital and experimental music and arts festival
+          that explores place making and the state of sound
+          practice in a confusing present.
+          <br /><br />
+          <a target='_blank' href=''>More info</a>
         </div>
       </div>
     </div>
