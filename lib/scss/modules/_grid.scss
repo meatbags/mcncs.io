@@ -3,8 +3,12 @@
   display: flex;
   flex-wrap: wrap;
 
-  .grid__half {
-    width: 50%;
+  .grid__full {
+    width: 100%;
+  }
+
+  .grid__75 {
+    width: 75%;
   }
 
   .grid__60 {
@@ -15,7 +19,7 @@
     width: 55%;
   }
 
-  .grid__50 {
+  .grid__50, .grid__half {
     width: 50%;
   }
 
@@ -25,5 +29,17 @@
 
   .grid__45 {
     width: 45%;
+  }
+
+  .grid__third {
+    width: 33.33%;
+  }
+
+  .grid__30 {
+    width: 30%;
+  }
+
+  .grid__25 {
+    width: 25%;
   }
 }

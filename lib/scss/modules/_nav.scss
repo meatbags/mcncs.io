@@ -8,8 +8,12 @@
   opacity: 1;
 
   &.active {
-    bottom: 100vh;
-    opacity: 0;
+    //bottom: 100vh;
+    //opacity: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 
   &.hidden {
@@ -25,12 +29,17 @@
     .menu-button {
       cursor: pointer;
       padding: $space * 2;
-      transform-origin: 50% 50%;
-      transform: rotate(-90deg);
-      font-size: $fontSizeMedium;
+
+      &.rotate {
+        transform-origin: 50% 50%;
+        transform: rotate(-90deg);
+        font-size: $fontSizeMedium;
+      }
     }
   }
 }
+
+$menuInnerWidth: 600px;
 
 .menu {
   width: 100%;
@@ -40,7 +49,7 @@
   left: 0;
   z-index: $indexMenu;
   transition: $transition;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.85);
   transform: translateY(100vh);
   opacity: 0;
 
@@ -62,35 +71,43 @@
     }
 
     .menu__content {
-      height: 100%;
       flex: 1;
-      width: 960px;
+      width: $menuInnerWidth;
       display: flex;
-      justify-content: center;
       align-items: center;
-      text-align: center;
-      line-height: 1.5;
-      letter-spacing: 4px;
+      line-height: 2;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      text-align: justify;
+      padding-bottom: $space * 2;
+      font-size: 15px;
+      opacity: 0;
+      transition: $transition;
 
-      .grid {
-        text-align: left;
+      &.active {
+        opacity: 1;
+      }
 
-        div {
-          padding-left: $space;
-          padding-right: $space;
+      .cascade {
+        &.active {
+          opacity: 1;
         }
       }
 
-      .menu__content__canvas {
+      .row {
         width: 100%;
-        display: flex;
-        justify-content: center;
-      }
+        padding: $space;
+        padding-bottom: $space * 3;
+        padding-top: $space * 3;
 
-      .menu__content__text {
-        width: 100%;
-        padding-left: $space;
-        padding-right: $space;
+        &.centre {
+          justify-content: center;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
       .menu__content__canvas, .menu__content__text {
@@ -101,8 +118,16 @@
         }
       }
 
-      @media screen and (max-width: 960px) {
+      @media screen and (max-width: $menuInnerWidth) {
         width: 100%;
+
+        .row {
+          padding: $space * 2;
+
+          .grid__30 {
+            width: 50%;
+          }
+        }
       }
     }
   }

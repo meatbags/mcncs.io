@@ -62,6 +62,11 @@
   color: $red;
 }
 
+.highlight {
+  text-decoration: underline;
+  color: $colourHighlight;
+}
+
 .italics {
   font-style: italic;
 }
