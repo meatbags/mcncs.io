@@ -127,6 +127,8 @@ $menuInnerWidth: 600px;
 
       @media screen and (max-width: $menuInnerWidth) {
         width: 100%;
+        line-height: 1.6;
+        word-spacing: 1px;
 
         .row {
           padding: $space * 2;

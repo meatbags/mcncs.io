@@ -30,19 +30,13 @@
         </div>
         <div class='row cascade'>
           <div class='grid'>
-            <div class='grid__50'>
+            <div class='grid__full'>
               Line-up drops <span class='highlight'>FEBRUARY</span>
-            </div>
-            <div class='grid__50 highlight'>
-
             </div>
           </div>
           <div class='grid'>
-            <div class='grid__50'>
+            <div class='grid__full'>
               Tickets available from <span class='highlight'>APRIL</span>
-            </div>
-            <div class='grid__50 highlight'>
-
             </div>
           </div>
         </div>
