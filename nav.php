@@ -23,26 +23,35 @@
           </div>
         </div>
         <div class='row cascade'>
-          <span class='highlight'>MECHANICS</span> is a two-day contemporary electronic, digital and
-          experimental music and arts festival exploring place-making
+          <span class='highlight'>MECHANICS</span> is a two-day music and arts festival
+          coming to Boston in Fall 2018. Showcasing electronic, digital, and experimental music,
+          <span class='highlight'>MECHANICS</span> explores place-making
           and the state of sound practice in a confusing present.
         </div>
         <div class='row cascade'>
           <div class='grid'>
-            <div class='grid__30'>BOSTON</div>
-            <div class='grid__30 highlight'>FALL 2018</div>
+            <div class='grid__50'>
+              Line-up drops <span class='highlight'>FEBRUARY</span>
+            </div>
+            <div class='grid__50 highlight'>
+
+            </div>
           </div>
           <div class='grid'>
-            <div class='grid__30'>LINE UP COMING</div>
-            <div class='grid__30 highlight'>FEBRUARY</div>
-          </div>
-          <div class='grid'>
-            <div class='grid__30'>TICKETS</div>
-            <div class='grid__30 highlight'>APRIL</div>
+            <div class='grid__50'>
+              Tickets available from <span class='highlight'>APRIL</span>
+            </div>
+            <div class='grid__50 highlight'>
+
+            </div>
           </div>
         </div>
-        <div class='row cascade'>
-          <span class='highlight'>CONNECT</span>
+        <div class='row grid socmed'>
+          <div class='grid__50'>
+            <img src='<?php echo get_template_directory_uri(); ?>/lib/img/fb.png' />
+            <img src='<?php echo get_template_directory_uri(); ?>/lib/img/insta.png' />
+            <img src='<?php echo get_template_directory_uri(); ?>/lib/img/twt.png' />
+          </div>
         </div>
       </div>
     </div>

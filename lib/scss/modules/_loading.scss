@@ -1,7 +1,7 @@
 @keyframes anim {
-  0%   {background-color: black;}
-  50%  {background-color: white;}
-  100% {background-color: black;}
+  0%   {opacity: 0;}
+  50%  {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 
@@ -22,11 +22,8 @@
     padding-bottom: $space * 6;
 
     .loading-square {
-      width: $space * 2;
-      height: $space * 2;
-      border: $border;
-      border-radius: $space;
-      transform: rotate(45deg);
+      //border: $border;
+      //border-radius: $space;
       animation: anim;
       animation-duration: 2s;
       animation-iteration-count: infinite;

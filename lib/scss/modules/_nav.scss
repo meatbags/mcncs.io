@@ -110,6 +110,13 @@ $menuInnerWidth: 600px;
         }
       }
 
+      .socmed {
+        img {
+          width: 28px;
+          padding-right: $space;
+        }
+      }
+
       .menu__content__canvas, .menu__content__text {
         transition: $transitionFast;
 
