@@ -1,8 +1,9 @@
 <?php
-  $content = get_field('sections');
-  $fb = get_field('facebook_link');
-  $insta = get_field('instagram_link');
-  $twitter = get_field('twitter_link');
+  $page = get_page_by_title('index');
+  $content = get_field('sections', $page->ID);
+  $fb = get_field('facebook_link', $page->ID);
+  $insta = get_field('instagram_link', $page->ID);
+  $twitter = get_field('twitter_link', $page->ID);
 ?>
 
 <div class='nav hidden'>
