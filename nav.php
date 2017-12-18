@@ -1,3 +1,9 @@
+<?php
+  $content = get_field('sections');
+  $fb = get_field('facebook_link');
+  $insta = get_field('instagram_link');
+  $twitter = get_field('twitter_link');
+?>
 
 <div class='nav hidden'>
   <div class='nav__inner'>
@@ -5,10 +11,7 @@
       <div class='menu-button__inner'>
         <img src='<?php echo get_template_directory_uri(); ?>/lib/img/logo_white_tiny.png' />
       </div>
-
-      <!--
-      <div class='menu-button__inner rotate'>&#8707;</div>
-      -->
+      <!-- <div class='menu-button__inner rotate'>&#8707;</div> -->
     </div>
   </div>
 </div>
@@ -22,29 +25,34 @@
             <img src='<?php echo get_template_directory_uri(); ?>/lib/img/logo_white_2.png' alt='Mechanics Logo' />
           </div>
         </div>
-        <div class='row cascade'>
-          <span class='highlight'>MECHANICS</span> is a two-day music and arts festival
-          coming to Boston in Fall 2018. Showcasing electronic, digital, and experimental music,
-          <span class='highlight'>MECHANICS</span> explores place-making
-          and the state of sound practice in a confusing present.
-        </div>
-        <div class='row cascade'>
-          <div class='grid'>
-            <div class='grid__full'>
-              Line-up drops <span class='highlight'>FEBRUARY</span>
+
+        <?php
+          foreach ($content as $block): ?>
+            <div class='row cascade'>
+              <div class='grid__full'>
+                <?php echo $block['section_content']; ?>
+              </div>
             </div>
-          </div>
-          <div class='grid'>
-            <div class='grid__full'>
-              Tickets available from <span class='highlight'>APRIL</span>
-            </div>
-          </div>
-        </div>
+            <?php
+          endforeach;
+        ?>
         <div class='row grid socmed'>
           <div class='grid__50'>
-            <img src='<?php echo get_template_directory_uri(); ?>/lib/img/fb.png' />
-            <img src='<?php echo get_template_directory_uri(); ?>/lib/img/insta.png' />
-            <img src='<?php echo get_template_directory_uri(); ?>/lib/img/twt.png' />
+            <?php if ($fb): ?>
+              <a target='_blank' href='<?php echo $fb; ?>'>
+                <img src='<?php echo get_template_directory_uri(); ?>/lib/img/fb.png' />
+              </a>
+            <?php endif;
+            if ($insta): ?>
+              <a target='_blank' href='<?php echo $insta; ?>'>
+                <img src='<?php echo get_template_directory_uri(); ?>/lib/img/insta.png' />
+              </a>
+            <?php endif;
+            if ($twitter): ?>
+              <a target='_blank' href='<?php echo $twitter; ?>'>
+                <img src='<?php echo get_template_directory_uri(); ?>/lib/img/twt.png' />
+              </a>
+            <?php endif; ?>
           </div>
         </div>
       </div>
