@@ -37,6 +37,7 @@
             <?php
           endforeach;
         ?>
+        <?php if ($fb || $insta || $twitter): ?>
         <div class='row grid socmed'>
           <div class='grid__50'>
             <?php if ($fb): ?>
@@ -55,6 +56,10 @@
               </a>
             <?php endif; ?>
           </div>
+        </div>
+        <?php endif; ?>
+        <div class='row'>
+          <?php get_template_part('newsletter'); ?>
         </div>
       </div>
     </div>
