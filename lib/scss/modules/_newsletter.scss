@@ -25,6 +25,7 @@
       padding-bottom: $space;
       padding-top: $space;
       margin-right: $space * 2;
+      border-radius: 0;
     }
 
     input[type='button'] {
@@ -41,6 +42,7 @@
       padding-right: $space * 2;
       cursor: pointer;
       border: 1px solid $colourPrimary;
+      border-radius: 0;
     }
   }
 }

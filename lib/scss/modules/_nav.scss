@@ -80,7 +80,7 @@ $menuInnerWidth: 600px;
       word-spacing: 2px;
       text-align: justify;
       padding-bottom: $space * 2;
-      font-size: 15px;
+      font-size: $fontSize;
       opacity: 0;
       transition: $transition;
 
@@ -134,6 +134,7 @@ $menuInnerWidth: 600px;
         width: 100%;
         line-height: 1.6;
         word-spacing: 1px;
+        font-size: $fontSizeSmall;
 
         .row {
           padding: $space * 2;
