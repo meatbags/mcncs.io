@@ -1,3 +1,1 @@
-<div id='canvas-wrapper'>
-	<!-- graphics load here -->
-</div>
+<div id='canvas-wrapper'></div>
